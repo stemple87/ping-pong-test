@@ -5,7 +5,9 @@ $(document).ready(function() {
     var i;
     userInput = parseInt(prompt("Enter your number here"));
     for (i = 1; i <= userInput; i++) {
-      if ((i % 15) === 0) {
+      if (isNaN(userInput)) { // <-- isNaN not working
+        $('span#pingPongResults').append("Please type a number!");
+      } else if ((i % 15) === 0) {
         $('span#pingPongResults').append("PingPong ");
       } else if ((i % 3) === 0) {
         $('span#pingPongResults').append("Ping ");
