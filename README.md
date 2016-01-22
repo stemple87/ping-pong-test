@@ -14,18 +14,14 @@ _{This is a project that tests our knowledge of javascript loops, conditional st
 
 ## Known Bugs
 
-_{There are no known bugs at this point}_
+_{Could not get isNaN to work. It would have displayed 'Please type a number!' when non-number characters are typed.}_
 
 ## Support and contact details
 
-_{Contact me at simonctemple@live.com}_
+_{Contact me at simonctemple@live.com, or at https://github.com/stemple87/}_
 
 ## Technologies Used
 
 _{This program uses HTML, CSS, javascript, jQuery, and Bootstrap.}_
-
-### License
-
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
 
 Copyright (c) 2016 **_{Simon Temple}_**

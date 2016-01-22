@@ -10,22 +10,45 @@
     <title>Ping Pong</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Ping Pong</h1>
-      <p>This is the Ping Pong game! Enter a number into the form and see all of the numbers on the screen. Any number that is divisible by 3 will be changed into 'Ping'. Numbers that are divisible by 5 will be a 'pong', and numbers that are divisible by both 3 and 5 will display PingPong.</p>
-      <!-- <form>
-        <div class="form-group">
-          <label for="text">Type in a number</label>
-          <input type="input" name="name" value="" id="numberInput">
-        </div>
-        <button id="button" type="submit" class="btn btn-info">Click here to see your results!</button>
-      </form> -->
-      <button id="button" type="click" class="btn btn-info">Click here to try the ping pong game</button>
-      <a href="javascript:location.reload(true)"><button id="button2" type="submit" class="btn btn-default">Try it again!</button></a>
-      <div id="hiddenResult">
-        <p>here are your results</p>
-        <span id="pingPongResults"></span>
+    <div class="jumbotron">
+      <div class="jumbotext">
+        <h1>Ping Pong</h1>
+        <h2>Check to see what numbers are divisible by 3, 5, and 15.</h2>
+        <p class="lead">
+          Try it out
+        <p>
       </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="sidebar col-sm-4">
+          <h3>About</h3>
+          <br>
+          <br>
+          <h4>Created By</h4>
+          <p>Simon Temple</p>
+          <br>
+          <h4>GitHub</h4>
+          <p><a href="https://github.com/stemple87">stemple87</a></p>
+          <br>
+          <h4>Level 2 test for:</h4>
+          <p>C#</p>
+        </div>
+        <div class="col-sm-8">
+          <p>This is the Ping Pong game! Enter a number into the form and see all of the numbers on the screen. Any number that is divisible by 3 will be changed into 'Ping'. Numbers that are divisible by 5 will be a 'pong', and numbers that are divisible by both 3 and 5 will display PingPong.</p>
+          <button id="button" type="click" class="btn btn-info">Click here to try the ping pong game</button>
+          <a href="javascript:location.reload(true)"><button id="button2" type="submit" class="btn btn-default">Clear results and try it again!</button></a>
+          <br>
+          <br>
+          <div id="hiddenResult">
+            <h4>Here are your results!</h4>
+            <span id="pingPongResults"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Copyright &copy; 2016 Simon Temple</p>
     </div>
   </body>
 </html>
