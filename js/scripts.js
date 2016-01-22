@@ -2,7 +2,6 @@ $(document).ready(function() {
   var pingPong = function() {
     // debugger;
     var userInput;
-
     var i;
     userInput = parseInt(prompt("Enter your number here"));
     for (i = 1; i <= userInput; i++) {
@@ -16,17 +15,9 @@ $(document).ready(function() {
         $('span#pingPongResults').append(i + " ");
       }
     }
-
   }
-
-
   $("button#button").click(function() {
   pingPong();
   $("div#hiddenResult").show();
   });
-  $("button#button2").click(function() {
-  $("div#hiddenResult").hide();
-  userInput = ""
-  });
-  // event.preventDefault();
 });
