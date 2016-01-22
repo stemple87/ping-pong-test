@@ -1,6 +1,5 @@
 $(document).ready(function() {
   var pingPong = function() {
-    // debugger;
     var userInput;
     var i;
     userInput = parseInt(prompt("Enter your number here"));
@@ -23,7 +22,6 @@ $(document).ready(function() {
   $("div#hiddenResult").show();
   });
 });
-
 var pingPongTester = function(input) {
   if (input % 15 === 0) {
     input = "";
