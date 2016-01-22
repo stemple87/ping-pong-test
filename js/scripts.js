@@ -1,10 +1,11 @@
 $(document).ready(function() {
   var pingPong = function() {
-    debugger;
+    // debugger;
     var userInput;
+
     var i;
-    userInput = prompt("Enter your number here");
-    for (i = 1; i <= userInput.length; i++) {
+    userInput = parseInt(prompt("Enter your number here"));
+    for (i = 1; i <= userInput; i++) {
       if ((i % 15) === 0) {
         $('span#pingPongResults').append("PingPong ");
       } else if ((i % 3) === 0) {
@@ -25,6 +26,7 @@ $(document).ready(function() {
   });
   $("button#button2").click(function() {
   $("div#hiddenResult").hide();
+  userInput = ""
   });
   // event.preventDefault();
 });
