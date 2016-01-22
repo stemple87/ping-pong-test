@@ -8,11 +8,11 @@ $(document).ready(function() {
       if (isNaN(userInput)) { // <-- isNaN not working
         $('span#pingPongResults').append("Please type a number!");
       } else if ((i % 15) === 0) {
-        $('span#pingPongResults').append("PingPong ");
+        $('span#pingPongResults').append("<span class='pingPong'>PingPong</span> ");
       } else if ((i % 3) === 0) {
-        $('span#pingPongResults').append("Ping ");
+        $('span#pingPongResults').append("<span class='ping'>Ping</span> ");
       } else if ((i % 5) === 0) {
-        $('span#pingPongResults').append("Pong ");
+        $('span#pingPongResults').append("<span class='pong'>Pong</span> ");
       } else {
         $('span#pingPongResults').append(i + " ");
       }
