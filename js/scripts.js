@@ -1,38 +1,30 @@
 $(document).ready(function() {
-  $("form").submit(function(event) {
-    var userInput = $("input#pigLatin").val();
-    var result = pigLatin(userInput);
-    $("div#result").text(result);
-    // $("#result").show();
-    // console.log();
-    event.preventDefault();
-  });
-
-});
-
-
-
-var pingPong = function(input) {
-  for (var i = 0; i < input.length; i++) {
-
-    var listItem = "<li>"
-    if (i % 15 === 0) {
-      input = "";
-      input += "PingPong";
-      listItem += input + "</li>";
-      // return input;
-    } else if (i % 3 === 0) {
-      input = "";
-      input += "Ping";
-      listItem += input + "</li>";
-      // return input;
-    } else if (i % 5 === 0) {
-      input = "";
-      input += "Pong";
-      listItem += input + "</li>";
-      // return input;
-    } else {
-      listItem += [i] + "</li>";
+  var pingPong = function() {
+    debugger;
+    var userInput;
+    var i;
+    userInput = prompt("Enter your number here");
+    for (i = 1; i <= userInput.length; i++) {
+      if ((i % 15) === 0) {
+        $('span#pingPongResults').append("PingPong ");
+      } else if ((i % 3) === 0) {
+        $('span#pingPongResults').append("Ping ");
+      } else if ((i % 5) === 0) {
+        $('span#pingPongResults').append("Pong ");
+      } else {
+        $('span#pingPongResults').append(i + " ");
+      }
     }
+
   }
-}
+
+
+  $("button#button").click(function() {
+  pingPong();
+  $("div#hiddenResult").show();
+  });
+  $("button#button2").click(function() {
+  $("div#hiddenResult").hide();
+  });
+  // event.preventDefault();
+});
