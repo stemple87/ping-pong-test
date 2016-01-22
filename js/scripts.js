@@ -7,5 +7,9 @@ var pingPong = function(input) {
     input = "";
     input += "Pong";
     return input;
+  } else if (input === 15) {
+    input = "";
+    input += "PingPong";
+    return input;
   }
 }

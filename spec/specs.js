@@ -5,4 +5,7 @@ describe('pingPong', function() {
   it("will replace any numbers divisible by 5 with the word Pong", function() {
     expect(pingPong(5)).to.equal("Pong");
   });
+  it("will replace any numbers divisible by 5 with the word Pong", function() {
+    expect(pingPong(15)).to.equal("PingPong");
+  });
 });
